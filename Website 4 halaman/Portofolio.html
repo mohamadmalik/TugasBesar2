@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body { background-color: #CFE1B9; margin: 0; }
+
+            @font-face {
+                font-family: 'PoppinsRegular';
+                src: url('font/Poppins-Regular.ttf') format('truetype');
+            }
+            @font-face {
+                font-family: 'Poppins-Bold';
+                src: url('font/Poppins-Bold.ttf') format('truetype');
+            }
+
+            .container {
+                max-width: 820px;
+                margin: 0 auto;
+                padding: 0 40px;
+                box-sizing: border-box;
+            }
+
+            .Judul {
+                font-size: 60px;
+                color: #385536;
+                font-weight: 1000;
+                letter-spacing: 4px;
+                text-align: center;
+                font-family: PoppinsRegular;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 10px 30px;
+                border: 2px solid #385536;
+                border-radius: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 95%;
+                max-width: 1500px;
+                max-height: 70px;
+                box-sizing: border-box;
+                z-index: 999;
+            }
+
+            ul li a {
+                display: block;
+                color: #385536;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+
+            .Logo { margin-right: auto; }
+            .Contact { margin-left: auto; }
+
+            .navbartext {
+                font-family: PoppinsRegular;
+                font-size: 14px;
+            }
+
+           /* Tambah di .video-scroll-section */
+.video-scroll-section {
+    width: 100%;  /* tambah ini */
+    height: 200vh;
+    position: relative;
+    view-timeline: --section-progress block;
+}
+
+.video-wrapper {
+    width: 100%;  /* tambah ini */
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Ganti .video-wrapper video yang lama */
+.video-wrapper video {
+    width: 70%;
+    border-radius: 20px;
+    animation: expand-video linear both;
+    animation-timeline: --section-progress;
+    animation-range: cover 33.33% cover 66.67%;
+}
+
+@keyframes expand-video {
+    from {
+        width: 70%;
+        border-radius: 20px;
+    }
+    to {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+            .kotak-hijau-muda {
+                background-color: #385536;
+                padding: 60px 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <ul>
+        <li class="Logo" style="font-family: Poppins-Bold; color: #f6ffe8; font-size: 24px;"><a
+                href="index.html" style="color: #385536;">MALIK</a></li>
+        <li><a href="keluarga.html" class="navbartext">Keluarga</a></li>
+        <li><a href="teman.html" class="navbartext">Teman</a></li>
+        <li><a href="Hobi.html" class="navbartext">Hobi</a></li>
+        <li><a href="Portofolio.html" class="navbartext">Portofolio</a></li>
+        <li class="Contact"><a href="#kontak-kami" class="navbartext">Contact Me</a></li>
+    </ul>
+
+        <!-- HERO -->
+        <div class="container" style="padding-top: 150px;">
+            <p class="Judul">Beberapa karya saya dalam bidang DKV.</p>
+        </div>
+
+        <!-- VIDEO SECTION -->
+        <div class="video-scroll-section">
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline>
+                    <source src="Video/Portovideo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <section class="kotak-hijau-muda">
+            <div class="container" id="kontak-kami">
+                <img src="Gambar/opentowork.png" style="width: 300px; height: 50px; display: block; margin: 0 auto 20px auto;">
+                <p style="font-family: Poppins-Bold; font-size: 40px; color: #f6ffe8; text-align: center; margin: 0;">Malikfadillah01@gmail.com</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                    <p style="font-family: PoppinsRegular; font-size: 16px; color: #f6ffe8; margin: 0;">Aku tunggu kabarmu</p>
+                    <p style="font-family: PoppinsRegular; font-size: 16px; color: #f6ffe8; margin: 0;">© 2026 Malik Fadillah. All Rights Reserved</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </body>
+</html>

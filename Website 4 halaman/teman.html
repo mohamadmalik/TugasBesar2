@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body { background-color: #f1f1dd; margin: 0; }
+
+            @font-face {
+                font-family: 'PoppinsRegular';
+                src: url('font/Poppins-Regular.ttf') format('truetype');
+            }
+            @font-face {
+                font-family: 'Poppins-Bold';
+                src: url('font/Poppins-Bold.ttf') format('truetype');
+            }
+
+            .container {
+                max-width: 820px;
+                margin: 0 auto;
+                padding: 0 40px;
+                box-sizing: border-box;
+                position: relative;
+            }
+
+            .Judul {
+                font-size: 60px;
+                color: #fbfbfb;
+                font-weight: 1000;
+                letter-spacing: 4px;
+                text-align: center;
+                font-family: PoppinsRegular;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 10px 30px;
+                border: 2px solid #4c774f;
+                border-radius: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 95%;
+                max-width: 1500px;
+                max-height: 70px;
+                box-sizing: border-box;
+                z-index: 999;
+            }
+
+            ul li a {
+                display: block;
+                color: #4c774f;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+
+            .Logo { margin-right: auto; }
+            .Contact { margin-left: auto; }
+
+            .navbartext {
+                font-family: PoppinsRegular;
+                font-size: 14px;
+            }
+
+            .video-scroll-section {
+                height: 200vh;
+                position: relative;
+            }
+
+            .video-wrapper {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .video-wrapper video {
+                width: 70%;
+                border-radius: 20px;
+            }
+
+            .kotak-hijau-muda {
+                background-color: #385536;
+                padding: 60px 20px;
+            }
+
+             .foto-profil {
+            position: absolute;
+            transform: translate(10%, -80%);
+            top: 770px;
+            left: -29%;
+            width: 350px;
+            height: 700px;
+        }
+
+        .foto-profil1 {
+            position: absolute;
+            transform: translate(10%, -80%);
+            top: 150px;
+            left: -6%;
+            width: 750px;
+            height: 60px;
+        }
+
+        .foto-profil2 {
+            position: absolute;
+            transform: translate(10%, -80%);
+            top: 450px;
+            left: 27%;
+            width: 720px;
+            height: 300px;
+        }
+
+        .foto-profil3 {
+            position: absolute;
+            transform: translate(10%, -80%);
+            top: 575px;
+            left: 43%;
+            width: 480px;
+            height: 56px;
+        }
+
+        .foto-profil31 {
+            position: absolute;
+            transform: translate(10%, -80%);
+            top: 597px;
+            left: 48.9%;
+            width: 480px;
+            height: 56px;
+            transform: scaleX(-1);
+        }
+
+
+        .foto-profil4 {
+            position: absolute;
+            transform: translate(10%, -80%);
+            top: 863px;
+            left: 31%;
+            width: 380px;
+            height: 235px;
+        }
+
+        .foto-profil5 {
+            position: absolute;
+            transform: translate(10%, -80%);
+            top: 863px;
+            left: 83%;
+            width: 330px;
+            height: 235px;
+        }
+
+        .teks-deskripsi {
+            position: absolute;
+            transform: translate(10%, -80%);
+            top: 450px;       /* Sama dengan foto-profil2 */
+            left: 27%;        /* Sama dengan foto-profil2 */
+            width: 720px;     /* Sama dengan foto-profil2 */
+            height: 300px;    /* Sama dengan foto-profil2 */
+            padding: 80px 40px 90px 70px; /* Atur padding biar teks ga nabrak icon play */
+            box-sizing: border-box;
+            color: #f1f1dd;   /* Warna teks, bisa lu ganti */
+            font-family: PoppinsRegular;
+            font-size: 16px;
+            z-index: 10;      /* Biar teksnya pasti di atas gambar */
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <ul>
+        <li class="Logo" style="font-family: Poppins-Bold; color: #f6ffe8; font-size: 24px;"><a
+                href="index.html" style="color: #385536;">MALIK</a></li>
+        <li><a href="keluarga.html" class="navbartext">Keluarga</a></li>
+        <li><a href="teman.html" class="navbartext">Teman</a></li>
+        <li><a href="Hobi.html" class="navbartext">Hobi</a></li>
+        <li><a href="Portofolio.html" class="navbartext">Portofolio</a></li>
+        <li class="Contact"><a href="#kontak-kami" class="navbartext">Contact Me</a></li>
+    </ul>
+
+        
+       <div class="container" style="padding-top: 150px;">
+            <img src="Gambar/teman.bintang1.png" class="foto-profil1">
+            <img src="Gambar/teman.teman.png" class="foto-profil">
+            
+            <img src="Gambar/teman.framedesc.png" class="foto-profil2">
+            <div class="teks-deskripsi"> Beberapa teman-teman saya yang menganggap saya adalah rumah mereka 
+            </div>
+
+            <img src="Gambar/teman.tigabintang.png" class="foto-profil31">
+            <img src="Gambar/teman.tigabintang.png" class="foto-profil3">
+            
+            <p class="Judul"></p>
+
+            <img src="Gambar/teman.player.png" class="foto-profil4">
+
+            <img src="Gambar/teman.statistik.png" class="foto-profil5">
+        </div>
+
+
+        <!-- FOOTER -->
+        <section class="kotak-hijau-muda" style="margin-top: 900px;">
+            <div class="container" id="kontak-kami">
+                <img src="Gambar/opentowork.png" style="width: 300px; height: 50px; display: block; margin: 0 auto 20px auto;">
+                <p style="font-family: Poppins-Bold; font-size: 40px; color: #f6ffe8; text-align: center; margin: 0;">Malikfadillah01@gmail.com</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                    <p style="font-family: PoppinsRegular; font-size: 16px; color: #f6ffe8; margin: 0;">Aku tunggu kabarmu</p>
+                    <p style="font-family: PoppinsRegular; font-size: 16px; color: #f6ffe8; margin: 0;">© 2026 Malik Fadillah. All Rights Reserved</p>
+                </div>
+            </div>
+        </section>
+
+    
+
+    </body>
+</html>

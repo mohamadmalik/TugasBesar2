@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body { background-color: #f1f1dd; margin: 0; }
+
+            @font-face {
+                font-family: 'PoppinsRegular';
+                src: url('font/Poppins-Regular.ttf') format('truetype');
+            }
+            @font-face {
+                font-family: 'Poppins-Bold';
+                src: url('font/Poppins-Bold.ttf') format('truetype');
+            }
+
+            .container {
+                max-width: 820px;
+                margin: 0 auto;
+                padding: 0 40px;
+                box-sizing: border-box;
+            }
+
+            .square {
+            height: 680px;
+            width: 650px;
+            margin-left: 52px;
+            background-color: #60875d;
+            border-radius: 25px;
+            margin-top: -30px;
+        }
+
+            .Judul {
+                font-size: 60px;
+                color: #385536;
+                font-weight: 1000;
+                letter-spacing: 4px;
+                text-align: center;
+                font-family: PoppinsRegular;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 10px 30px;
+                border: 2px solid #385536;
+                border-radius: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 95%;
+                max-width: 1500px;
+                max-height: 70px;
+                box-sizing: border-box;
+                z-index: 999;
+            }
+
+            ul li a {
+                display: block;
+                color: #385536;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+
+            .Logo { margin-right: auto; }
+            .Contact { margin-left: auto; }
+
+            .navbartext {
+                font-family: PoppinsRegular;
+                font-size: 14px;
+            }
+
+            .video-scroll-section {
+                height: 200vh;
+                position: relative;
+            }
+
+            .video-wrapper {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .video-wrapper video {
+                width: 70%;
+                border-radius: 20px;
+            }
+
+            .kotak-hijau-muda {
+                background-color: #385536;
+                padding: 60px 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <ul>
+        <li class="Logo" style="font-family: Poppins-Bold; color: #f6ffe8; font-size: 24px;"><a
+                href="index.html" style="color: #385536;">MALIK</a></li>
+        <li><a href="keluarga.html" class="navbartext">Keluarga</a></li>
+        <li><a href="teman.html" class="navbartext">Teman</a></li>
+        <li><a href="Hobi.html" class="navbartext">Hobi</a></li>
+        <li><a href="Portofolio.html" class="navbartext">Portofolio</a></li>
+        <li class="Contact"><a href="#kontak-kami" class="navbartext">Contact Me</a></li>
+    </ul>
+
+        <!-- HERO -->
+        <div class="container" style="padding-top: 150px; margin-bottom: 300px;">
+            <div class="square" >
+                <img src="Gambar/keluarga.Keluarga.png" style="width: 500px; height: 500px; margin-left: 80px; margin-top: 50px;  border-radius: 20px;">
+            <p style="font-family: Poppins-Bold; color: #f6ffe8; font-size: 39px; margin-top: 10; margin-left: 180px;">Keluarga Saya</p>
+        </div>
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+        <section class="kotak-hijau-muda">
+            <div class="container" id="kontak-kami">
+                <img src="Gambar/opentowork.png" style="width: 300px; height: 50px; display: block; margin: 0 auto 20px auto;">
+                <p style="font-family: Poppins-Bold; font-size: 40px; color: #f6ffe8; text-align: center; margin: 0;">Malikfadillah01@gmail.com</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                    <p style="font-family: PoppinsRegular; font-size: 16px; color: #f6ffe8; margin: 0;">Aku tunggu kabarmu</p>
+                    <p style="font-family: PoppinsRegular; font-size: 16px; color: #f6ffe8; margin: 0;">© 2026 Malik Fadillah. All Rights Reserved</p>
+                </div>
+            </div>
+        </section>
+
+    
+
+    </body>
+</html>
